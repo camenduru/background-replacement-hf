@@ -12,7 +12,7 @@ DEFAULT_NEGATIVE_PROMPT = ""
 EXAMPLES = [
     [
         "examples/black-sneakers-with-white-sole.jpg",
-        "on a blanket, Great Lawn in Central Park, Bethesda Terrace in the distance, beautiful sunny summer day, commercial packaging photography",
+        "on the grass in Central Park, gorgeous summer day with Bethesda fountain in the background, commercial footwear product photography",
         "people, litter, trash, crowds, messy",
     ],
     [
@@ -22,23 +22,28 @@ EXAMPLES = [
     ],
     [
         "examples/dj-making-music-on-mixer.jpg",
-        "midnight dance party at Miami Beach, string lights and bars behind",
-        "",
+        "on the turntables with a packed dance floor, epic midnight edm party in Miami Beach, colorful nightlife photography",
+        "disfigured, dismembered, mangled, marred",
     ],
     [
         "examples/jean-shorts-woman.jpg",
-        "on the beach in Malibu, a five-star beachfront hotel in the background, magic hour in Malibu California",
-        "",
+        "on the beach in Malibu, a five-star beachfront hotel in the background, stark late afternoon light near the dunes, lifestyle photography",
+        "blurry background, ripples, soft focus, bokeh",
     ],
 ]
 
 INTRO = """
 # SDXL Background Replacement for Product Images
-_from your friends at 🛍️[Shopify](https://www.shopify.com/)_
+_from your friends at_ 🛍️[Shopify](https://www.shopify.com/)
 
 Building an online store requires lots of high quality product and marketing images. This is an early demo of a background replacement tool built with Stable Diffusion XL that makes it easy to use your existing product images to make something new. Please be patient during peak demand. 😅
 
-To use it, upload your product photo and describe the background you’d like to see in place of the original. Optionally, describe what you don’t want in the negative prompt field.
+To use it, upload your product photo (.jpg or .png), then describe the background you’d like to see in place of the original. For best results follow the general pattern in the examples below:
+1. ❌ _Do not_ describe your product in the prompt (ex: black sneakers)
+2. ✅ Do describe the "grounding" for your product (ex: placed on a table)
+3. ✅ Do describe the scene you want (ex: in a greek cottage)
+4. ✅ Do describe a style of image (ex: side view commercial product photography)
+5. 🤔 Optionally, describe what you want to avoid 🙅 in the negative prompt field
 """
 
 MORE_INFO = """
@@ -113,12 +118,12 @@ with gr.Blocks(css=custom_css) as iface:
         with gr.Column(elem_id="params"):
             with gr.Tab('Prompts'):
                 positive_prompt = gr.Textbox(
-                    label="Positive Prompt - describe what you'd like to see",
+                    label="Positive Prompt: describe what you'd like to see",
                     lines=3,
                     value=DEFAULT_POSITIVE_PROMPT
                 )
                 negative_prompt = gr.Textbox(
-                    label="Negative Prompt - describe what you don't want to see",
+                    label="Negative Prompt: describe what you want to avoid",
                     lines=3,
                     value=DEFAULT_NEGATIVE_PROMPT
                 )
