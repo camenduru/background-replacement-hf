@@ -11,6 +11,7 @@ def init():
 
     depth_controlnet = ControlNetModel.from_pretrained(
         "diffusers/controlnet-depth-sdxl-1.0",
+        variant="fp16",
         use_safetensors=True,
         torch_dtype=torch.float16
     ).to("cuda")
