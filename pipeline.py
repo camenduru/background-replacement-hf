@@ -13,8 +13,7 @@ def init():
         "diffusers/controlnet-depth-sdxl-1.0",
         variant="fp16",
         use_safetensors=True,
-        torch_dtype=torch.float16,
-        low_cpu_mem_usage=True
+        torch_dtype=torch.float16
     ).to("cuda")
 
     print("Initializing autoencoder...")
@@ -22,7 +21,6 @@ def init():
     vae = AutoencoderKL.from_pretrained(
         "madebyollin/sdxl-vae-fp16-fix",
         torch_dtype=torch.float16,
-        low_cpu_mem_usage=True
     ).to("cuda")
 
     print("Initializing SDXL pipeline...")
@@ -33,8 +31,8 @@ def init():
         vae=vae,
         variant="fp16",
         use_safetensors=True,
-        torch_dtype=torch.float16,
-        low_cpu_mem_usage=True
+        torch_dtype=torch.float16
+        # low_cpu_mem_usage=True
     ).to("cuda")
 
     # pipe.enable_model_cpu_offload()

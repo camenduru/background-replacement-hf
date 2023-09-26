@@ -13,9 +13,9 @@ def init():
     print("Initializing depth estimator...")
 
     depth_estimator = DPTForDepthEstimation.from_pretrained(
-        "Intel/dpt-hybrid-midas", low_cpu_mem_usage=True).to("cuda")
+        "Intel/dpt-hybrid-midas").to("cuda")
     feature_extractor = DPTFeatureExtractor.from_pretrained(
-        "Intel/dpt-hybrid-midas", low_cpu_mem_usage=True)
+        "Intel/dpt-hybrid-midas")
 
 
 def get_depth_map(image):
