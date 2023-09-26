@@ -104,6 +104,9 @@ custom_css = """
     .md ol, .md ul {
         margin-left: 1rem;
     }
+    .md img {
+        margin-bottom: 1rem;
+    }
 """
 
 with gr.Blocks(css=custom_css) as iface:
