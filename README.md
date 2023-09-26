@@ -26,7 +26,7 @@ You can check our FAQs below! We are also gathering resources from the community
 ## FAQs
 
 1. **What is the purpose of this Space?** This is a preview of our background replacement tool for product imagery built with Stable Diffusion XL. Access to innovative text-to-image solutions will transform the possibilities for millions of merchants. We’re releasing an early demo to learn from the community.
-2. **Can I use the demo for commercial usage?** The demo is currently intended for non-commercial use and is provided to explore the capabilities of image generation for commerce use cases. If you’d like to discuss commercial usage scenarios or collaboration opportunities, reach out to our team at [email].
+2. **Can I use the demo for commercial usage?** The demo is a preview and isn’t intended for production use, but the source is available and there is no commercial use restriction in the license.
 3. **What data is Shopify collecting?** Shopify isn’t collecting any usage data from this Space. We’re sharing this demo because we’re excited to bring these technologies to merchants and hope to get there faster with direct feedback from the community. We look forward to hearing from you!
 4. **I got a weird image, can I report it or send it to you?** Absolutely! We appreciate your help in identifying any issues or anomalies. Please report any strange or unexpected results with the image and relevant details in the community channel. It will help us refine and improve the tool for future users.
 5. **Are there any limitations to the demo?** This tool is currently in its early stages and you may hit edge cases that don’t function as intended. Share these examples with us. We appreciate your patience and feedback as we work to improve the technology!
