@@ -9,13 +9,15 @@ app_file: app.py
 pinned: true
 ---
 
-![image/png](https://cdn-uploads.huggingface.co/production/uploads/6318f4aeacffc70bd4e0fa61/folLxRMuq_cPbgUEgE_of.png)
-
 # SDXL Background Replacement for Product Images
 
 Building an online store requires lots of high quality product and marketing images. This is an early demo of a background replacement tool built with Stable Diffusion XL that makes it easy to use your existing product images to make something new. Please be patient during peak demand. 😅
 
 To use it, upload your product photo and describe the background you’d like to see in place of the original. Optionally, describe what you don’t want in the negative prompt field.
+
+<center>
+  <video width="512" height="512" controls autoplay src="https://cdn-uploads.huggingface.co/production/uploads/64e678b09cb7c83a9d72241c/nHdQpjHXtZQ9lDXGreyGs.mp4"></video>
+</center>
 
 ## More information
 
