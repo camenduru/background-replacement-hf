@@ -99,6 +99,9 @@ custom_css = """
     #params .form > :last-child{
         flex-grow: 1;
     }
+    .md ol, .md ul {
+        margin-left: 1rem;
+    }
 """
 
 with gr.Blocks(css=custom_css) as iface:
