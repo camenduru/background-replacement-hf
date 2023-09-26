@@ -36,6 +36,8 @@ INTRO = """
 # SDXL Background Replacement for Product Images
 _from your friends at_ 🛍️[Shopify](https://www.shopify.com/)
 
+[![Duplicate this Space](https://huggingface.co/datasets/huggingface/badges/resolve/main/duplicate-this-space-md.svg)](https://huggingface.co/spaces/Shopify/background-replacement?duplicate=true)
+
 Building an online store requires lots of high quality product and marketing images. This is an early demo of a background replacement tool built with Stable Diffusion XL that makes it easy to use your existing product images to make something new. Please be patient during peak demand. 😅
 
 To use it, upload your product photo (.jpg or .png), then describe the background you’d like to see in place of the original. For best results follow the general pattern in the examples below:
