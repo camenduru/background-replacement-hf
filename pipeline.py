@@ -10,7 +10,7 @@ def init():
     print("Initializing depth ControlNet...")
 
     depth_controlnet = ControlNetModel.from_pretrained(
-        "diffusers/controlnet-depth-sdxl-1.0",
+        "diffusers/controlnet-depth-sdxl-1.0-mid",
         variant="fp16",
         use_safetensors=True,
         torch_dtype=torch.float16
