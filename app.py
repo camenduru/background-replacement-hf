@@ -6,7 +6,7 @@ from background_replacer import replace_background
 
 developer_mode = os.getenv('DEV_MODE', False)
 
-DEFAULT_POSITIVE_PROMPT = "next to an idyllic blue pool"
+DEFAULT_POSITIVE_PROMPT = "on the pavement, poolside, idyllic infinity pool, Hawaiian hilltops, commercial product photography"
 DEFAULT_NEGATIVE_PROMPT = ""
 
 EXAMPLES = [
