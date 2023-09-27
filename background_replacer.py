@@ -16,7 +16,7 @@ from depth_estimator import init as init_depth_estimator, get_depth_map
 from pipeline import init as init_pipeline, run_pipeline
 from image_utils import ensure_resolution, crop_centered
 
-developer_mode = os.getenv('DEV_MODE', False)
+developer_mode = os.getenv('DEV_MODE', True)
 
 init_captioner()
 init_upscaler()

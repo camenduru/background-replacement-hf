@@ -10,7 +10,7 @@ def init():
     print("Initializing depth ControlNet...")
 
     depth_controlnet = ControlNetModel.from_pretrained(
-        "diffusers/controlnet-depth-sdxl-1.0-mid",
+        "diffusers/controlnet-depth-sdxl-1.0",
         variant="fp16",
         use_safetensors=True,
         torch_dtype=torch.float16
@@ -54,7 +54,7 @@ def run_pipeline(image, positive_prompt, negative_prompt, seed):
         prompt=positive_prompt,
         negative_prompt=negative_prompt,
         num_inference_steps=30,
-        num_images_per_prompt=4,
+        num_images_per_prompt=1,
         controlnet_conditioning_scale=0.65,
         guidance_scale=10.0,
         generator=generator,
