@@ -4,7 +4,7 @@ import gradio as gr
 
 from background_replacer import replace_background
 
-developer_mode = os.getenv('DEV_MODE', False)
+developer_mode = os.getenv('DEV_MODE', True)
 
 DEFAULT_POSITIVE_PROMPT = "on the pavement, poolside, idyllic infinity pool, Hawaiian hilltops, commercial product photography"
 DEFAULT_NEGATIVE_PROMPT = ""
